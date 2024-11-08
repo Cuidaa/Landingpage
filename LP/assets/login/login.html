@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Cuidaa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <img src="./img/logo.png" alt="easyclass" height="20" width="1000"/>
+                <h4>Cuidaa</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Faça seu login</h2>
+                <h6>Não tem registro ainda?</h6>
+                <a href="#" class="toggle">Criar</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Senha</label>
+                </div>
+                <input type="submit" value="Entrar" class="sign-btn" onclick="multi.html">
+
+                <p class="text">
+                  Esqueceu sua senha ou dados do seu login?
+                  <a href="#">Clique aqui</a>
+                </p>
+              </div>
+            </form>
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+              <div class="logo">
+                <img src="./img/logo.png" alt="easyclass" />
+                <h4>Cuidaa</h4>
+              </div>
+
+              <div class="heading">
+                <h2>Crie sua Conta</h2>
+                <h6>Já possui uma conta?</h6>
+                <a href="#" class="toggle">Logar</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Criar" class="sign-btn"/>
+
+                <p class="text">
+                  
+                  <input type="checkbox"> Eu aceito os <a href="#">Termos de serviços</a><br>
+                  <input type="checkbox"> <a href="#">Politica de Privacidade</a>
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./img/image1.png" class="image img-1 show" alt="" />
+              <img src="./img/image2.png" class="image img-2" alt="" />
+              <img src="./img/image3.png" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Cuidar com amor</h2>
+                  <h2>de quem com amor cuidou</h2>
+                  <h2>compartilhe com seus amigos</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-container">
+        <!-- Sidebar start -->
+        <div class="form-sidebar">
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Step 1</span>
+              <b>Your info</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Step 2</span>
+              <b>Select plan</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Step 3</span>
+              <b>Add-ons</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="step-content">
+              <span>Step 4</span>
+              <b>Summary</b>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+        <!-- * Step 1 start -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Informações</h1>
+            <p class="exp">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="name">Name</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="name"
+              placeholder="e.g. Stephen King"
+            />
+            
+            <div class="label">
+              <label for="email">Email Address</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            
+            <input
+              required
+              type="text"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+            
+            <div class="label">
+              <label for="phone">Phone Number</label>
+              <p class="error">This Field Is Required</p>
+            </div>
+            
+            <input
+              required
+              type="tel"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+             />
+          </form>
+          <div class="btns">
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        
+        <!-- Step 1 end -->
+        
+        <!-- * Step 2 start -->
+        <div class="stp step-2">
+          <div class="header">
+            <h1 class="title">Escolha o profissional</h1>
+            <p class="exp">Seleciona a modalidade que deseja ajuda.</p>
+          </div>
+          <form>
+            <div class="plan-card selected">
+              <img src="img/icon-arcade.svg" alt="arcade" />
+              <div class="plan-info chosen">
+                <b>Cuidador</b>
+                <span class="plan-priced">Atividades diárias de cuidado</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="img/icon-arcade.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>Enfermeiro</b>
+                <span class="plan-priced">Cuidado Profissional na Sua Casa</span>
+              </div>
+            </div>
+            <div class="plan-card">
+              <img src="img/icon-pro.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>
+                  Fisioterapia Domiciliar</b>
+                <span class="plan-priced">Tratamento personalizado para seu bem-estar</span>
+              </div>
+            </div>
+            
+            <div class="plan-card">
+              <img src="img/icon-advanced.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>Holistica</b>
+                <span class="plan-priced">Interconexão entre mente, corpo e espírito</span>
+              </div>
+            </div>
+
+            <div class="plan-card">
+              <img src="img/icon-advanced.svg" alt="arcade" />
+              <div class="plan-info">
+                <b>Ginástica 60+</b>
+                <span class="plan-priced">Atividades físicas personalizadas para sua longevidade ativa.</span>
+              </div>
+            </div>
+          
+          </form>
+          <div class="switcher">
+            <p class="monthly sw-active">Monthly</p>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <p class="yearly">Yearly</p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 2 end -->
+        <!-- * Step 3 start -->
+        <div class="stp step-3">
+          <div class="header">
+            <h1 class="title">Selecione o tipo de serviço:</h1>
+            <p class="exp">Informe para o profissional o tipo de ajuda que você precisa:</p>
+          </div>
+          <form>
+            <div class="box" data-id="1">
+              <input type="radio" id="online" />
+              <div class="description">
+                <label for="online">Consultas e Exames</label>
+                <small></small>
+              </div>
+              <p class="price"></p>
+            </div>
+            <div class="box" data-id="2">
+              <input type="radio" id="larger" />
+              <div class="description">
+                <label for="larger">Momento de Lazer e descontração</label>
+                <small></small>
+              </div>
+              <p class="price"></p>
+            </div>
+            <div class="box" data-id="3">
+              <input type="radio" id="profile" />
+              <div class="description">
+                <label for="profile">Atividades diárias de cuidado, banho, medicação, vestir-se etc</label>
+                <small></small>
+              </div>
+              <p class="price"></p>
+            </div>
+          </form>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 3 end -->
+        <!-- * Step 4 start -->
+        <div class="stp step-4">
+          <div class="header">
+            <h1 class="title">Finishing up</h1>
+            <p class="exp">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="selection-box">
+            <div class="selection-container">
+              <div class="selected-plan">
+                <p class="plan-name">Arcade(Monthly)</p>
+                <p class="plan-price">$9/mo</p>
+              </div>
+              <hr />
+              <div class="addons">
+                <template>
+                  <div class="selected-addon">
+                    <span class="service-name">Online serivice</span>
+                    <span class="servic-price">+$1/mo</span>
+                  </div>
+                </template>
+              </div>
+            </div>
+            <p class="total">Total (per month) <b>+$12/mo</b></p>
+          </div>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 4 end -->
+        <!-- Step 5 start -->
+        <div class="stp step-5">
+          <img src="img/icon-thank-you.svg" alt="" />
+          <div class="header">
+            <h1 class="title">Thank you!</h1>
+            </div>
+
+            <body>
+              <div class="container">
+                  <header class="header">
+                  <h4 class="title">Live User Filter</h4>
+                  <small class="subtitle">Search by name and/or location</small>
+                  <input type="text" id="filter" placeholder="Search">
+                  </header>
+                  <ul id="result" class="user-list">
+                  <li>
+                  <h3>Loading...</h3>
+                  </li>
+                  </ul>
+                  </div>
+                  <script>
+                      const result = document.getElementById('result')
+          const filter = document.getElementById('filter')
+          const listItems = []
+          getData()
+          filter.addEventListener('input', (e) => filterData(e.target.value))
+          async function getData() {
+          const res = await fetch('https://randomuser.me/api?results=50')
+          const { results } = await res.json()
+          // Clear result
+          result.innerHTML = ''
+          results.forEach(user => {
+          const li = document.createElement('li')
+          listItems.push(li)
+          li.innerHTML = `
+          <img src="${user.picture.large}" alt="${user.name.first}">
+          <div class="user-info">
+          <h4>${user.name.first} ${user.name.last}</h4>
+          <p>${user.location.city}, ${user.location.country}</p>
+          </div>
+          `
+          result.appendChild(li)
+          })
+          }
+          function filterData(searchTerm) {
+          listItems.forEach(item => {
+          if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+          item.classList.remove('hide')
+          } else {
+          item.classList.add('hide')
+          }
+          })
+          }
+                  </script>
+          </body>
+
+
+
+
+          <div class="btns">
+          <button class="next-stp" type="submit">Next Step</button>
+        </div>
+        <!-- Step 5 end -->
+      </div>
+    </div>
+  </body>
+</html>
